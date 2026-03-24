@@ -26,7 +26,8 @@ while op !=4:
        
     elif op == 3:
         #Exibir ficha completa
-        print('Exibir ficha completa')
+        for exibir in ficha:
+            print(ficha.items)
     elif op == 4:
         print('Saindo da ficha')
         break
