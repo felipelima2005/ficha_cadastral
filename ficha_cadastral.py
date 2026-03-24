@@ -11,8 +11,8 @@ while op !=4:
 
     if op == 1:
         #inserir dados na ficha
-        chave = input('Informe o campo que vc deseja na ficha')
-        valor = input('informe o valor que deseja inserir')
+        chave = input('Informe o campo que vc deseja na ficha: ')
+        valor = input('informe o valor que deseja inserir: ')
         #ficha[chave] = valor
         ficha.update({chave:valor})
     elif op == 2:
@@ -20,14 +20,15 @@ while op !=4:
         print(f'Os campos disponiveis na ficha são {ficha.keys()}')
         chave = input('informe qual campo deseja exibir: ')
         if chave in ficha.keys():
-            print(ficha[chave])
+            print(f'O campo {chave} contem o dado {ficha.get(chave)}')
         else:
             print('A chave nao existe')
        
     elif op == 3:
         #Exibir ficha completa
-        for exibir in ficha:
-            print(ficha.items)
+        print('FICHA CADASTRAL')
+        for campo, dado in ficha.items():
+            print(f'{campo.upper()} --> {dado}')
     elif op == 4:
         print('Saindo da ficha')
         break
