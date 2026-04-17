@@ -3,7 +3,7 @@ ficha = {}
 
 while op !=4:
     print('\nFICHA CADASTRAL')
-    print('1 - Incluir informações ma ficha')
+    print('1 - Incluir informações na ficha')
     print('2 - Recuperar informações na ficha')
     print('3 - Exibir ficha completa')
     print('4 - Sair')
